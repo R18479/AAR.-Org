@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "functions": {
+    "api/**/*.py": {
+      "runtime": "vercel-python@beta",
+      "excludeFiles": "{node_modules,dist,assets,src,package-lock.json,tsconfig.json,vite.config.ts}/**"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/hello",
+      "destination": "/api/hello.py"
+    },
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/index.py"
+    }
+  ]
+}

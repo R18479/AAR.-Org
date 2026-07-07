@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "master-varejo-backend"
+version = "1.0.0"
+description = "FastAPI backend da Master Varejo para deploy serverless no Vercel"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+    { name = "Master Varejo Developer", email = "suporte@mastervarejo.com" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Framework :: FastAPI"
+]
+dependencies = [
+    "fastapi>=0.110.0",
+    "uvicorn>=0.28.0"
+]
+
+[tool.vercel]
+# Configuração especial para direcionar o Vercel Serverless para a entrada correta
+entrypoint = "api/index.py"

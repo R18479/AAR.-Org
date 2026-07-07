@@ -1,0 +1,36 @@
+{
+  "collections": {
+    "dbEntries": {
+      "fields": {
+        "loja": { "type": "string" },
+        "categoria": { "type": "string" },
+        "giro": { "type": "number" },
+        "valor": { "type": "number" },
+        "real": { "type": "boolean" },
+        "ultimaAtualizacao": { "type": "string" },
+        "metodo": { "type": "string" },
+        "userId": { "type": "string" }
+      }
+    },
+    "uploadHistory": {
+      "fields": {
+        "fileName": { "type": "string" },
+        "date": { "type": "string" },
+        "size": { "type": "string" },
+        "status": { "type": "string" },
+        "rowsUpdated": { "type": "number" },
+        "userId": { "type": "string" }
+      }
+    },
+    "dashboardState": {
+      "fields": {
+        "selectedLoja": { "type": "string" },
+        "selectedCategory": { "type": "string" },
+        "selectedPeriodId": { "type": "string" },
+        "pastedText": { "type": "string" },
+        "uploadedFileName": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      }
+    }
+  }
+}

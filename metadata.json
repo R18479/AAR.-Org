@@ -1,0 +1,6 @@
+{
+  "name": "Master Varejo",
+  "description": "Aplicativo web mobile para monitoramento e plano de ação rápida sobre giros de estoque no varejo. Contém interpretação de relatórios com expressões regulares (Regex) e banco de dados de fallback.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

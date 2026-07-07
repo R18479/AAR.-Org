@@ -1,0 +1,10 @@
+streamlit
+pandas
+pillow
+reportlab
+pdfplumber
+openpyxl
+xlsxwriter
+matplotlib
+fastapi>=0.110.0
+uvicorn>=0.28.0
